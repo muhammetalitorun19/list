@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yapılacaklar Listesi</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        input {
+            padding: 10px;
+            font-size: 16px;
+        }
+        button {
+            font-size: 16px;
+            padding: 10px;
+            cursor: pointer;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        li {
+            font-size: 18px;
+            margin: 10px 0;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Yapılacaklar Listesi</h1>
+    <input type="text" id="taskInput" placeholder="Görev ekle...">
+    <button onclick="addTask()">Ekle</button>
+    <ul id="taskList"></ul>
+
+    <script src="todo.js"></script>
+</body>
+</html>
